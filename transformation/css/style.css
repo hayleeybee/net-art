@@ -1,0 +1,15 @@
+h1 {
+    color: palevioletred; 
+    margin-bottom: 20px; 
+    font-family: 'Courier New', Courier, monospace; 
+}
+img {
+    width:100px;
+    margin: 10px; 
+    border-radius: 10px; 
+    transition: transform 0.2s; 
+  }
+
+img.enlarged {
+    transform: scale(1.2); /* Scale up by 20% */
+}
