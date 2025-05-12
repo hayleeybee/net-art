@@ -9,12 +9,16 @@ body {
     padding: 20px;
     text-align: center; 
     font-size: 20px; 
+    max-width: 750px; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 a {
     color: #3b6f3b; 
     text-decoration: none;
     transition: color 0.3s;
+    font-weight: 700; 
 }
 
 a:hover {
@@ -32,6 +36,17 @@ img {
     position: relative; 
 }
 
+img::before {
+    content: ''; 
+    position: absolute;
+    top: -5px; 
+    left: -5px;
+    right: -5px; 
+    bottom: -5px; 
+    border-radius: 20px; 
+    z-index: -1; 
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); 
+}
 img::before {
     content: ''; 
     position: absolute;
